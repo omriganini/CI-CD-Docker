@@ -1,5 +1,5 @@
 # Import node image
-FROM node:14.19
+FROM node:14.19-slim
 
 # Set the work directory
 WORKDIR /app
