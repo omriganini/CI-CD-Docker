@@ -17,3 +17,18 @@
 # A short demo:
 ![Demo](docs/build-weight-tracker-app-demo.gif)
 
+# Prerequisites for the pipeline part:
+Microsoft Azure account [Create Azure account](https://azure.microsoft.com/en-us/free/)
+Azure Devops account [Create Azure Devops account](https://azure.microsoft.com/en-us/services/devops/)
+Github account [Create Github account](https://github.com/signup)
+
+# Build your Iac with azure: 
+* Terraform is a great tool to build you infrastructure with
+* [What is Terraform](https://www.terraform.io/intro)
+* [Repo for the project](https://github.com/omriganini/terraform-ansible)
+
+# The CI part:
+* In the CI part we will build our image and push it to [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/#features) you can build one via the Azure portal .
+* After you create the container registry resource you have to build 2 environments (staging and production) via the azure devops and connect your machines to the registry
+* For the CI part you also need to build an [agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops)
+* 
