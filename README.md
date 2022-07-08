@@ -33,6 +33,7 @@ Github account [Create Github account](https://github.com/signup)
 * After you create the container registry resource and the new project you have to build 2 environments (staging and production) via the azure devops and connect your machines to the registry!
 ![envs](https://user-images.githubusercontent.com/105926044/178037865-6e88e873-e9d2-4063-a3d2-de5c4fcff057.jpg)
 
+# Build an agent
 * For the CI part you also need to build an [agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops)
 
 # Create your env file:
@@ -41,6 +42,9 @@ Github account [Create Github account](https://github.com/signup)
 
 # Run the pipelines:
 * Before we run the pipelines you have to [clone this repo](https://github.com/omriganini/CI-CD-Docker) to your version control hub (Github is the most recommended) pay attention to change the details in the yaml file according to your environment
-* Create a new pipeline: ![pipe](https://user-images.githubusercontent.com/105926044/178039928-9ba7f2f9-a67b-4979-8ee4-4d0c79003bc3.jpg)
-* Choose the source of your code: ![source](https://user-images.githubusercontent.com/105926044/178040675-c5434dca-a3d5-4d7d-91ec-432da9613495.jpg)
+# Create a new pipeline: ![pipe](https://user-images.githubusercontent.com/105926044/178039928-9ba7f2f9-a67b-4979-8ee4-4d0c79003bc3.jpg)
+# Choose the source of your code: ![source](https://user-images.githubusercontent.com/105926044/178040675-c5434dca-a3d5-4d7d-91ec-432da9613495.jpg)
+# Complete CI-CD Pipeline: ![CICDPIPE](https://user-images.githubusercontent.com/105926044/178041153-9dd34af3-9227-461b-aa27-5bcc29e50375.jpg)
 
+# Example of the app after deploy:
+![week6 staging](https://user-images.githubusercontent.com/105926044/178041463-0e9e05b7-49cd-45eb-8445-83aafee0eafa.jpg)
