@@ -29,11 +29,18 @@ Github account [Create Github account](https://github.com/signup)
 
 # The CI part:
 * In the CI part we will build our image and push it to [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/#features) you can build one via the Azure portal .
-* After you create the container registry resource you have to build 2 environments (staging and production) via the azure devops and connect your machines to the registry
+* After that you have to [create a new project in the azure devops portal](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?
+* After you create the container registry resource and the new project you have to build 2 environments (staging and production) via the azure devops and connect your machines to the registry!
 ![envs](https://user-images.githubusercontent.com/105926044/178037865-6e88e873-e9d2-4063-a3d2-de5c4fcff057.jpg)
 
 * For the CI part you also need to build an [agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops)
 
-# Create your env file
+# Create your env file:
 * in each of the machines you have to create env file in your user dir example: /home/omriganini you must call this file .env
 [Env file sample](https://github.com/oktadev/okta-nodejs-postgres-weight-tracker-example/blob/master/.env.sample) pay attention for the details you fill in this file!
+
+# Run the pipelines:
+* Before we run the pipelines you have to [clone this repo](https://github.com/omriganini/CI-CD-Docker) to your version control hub (Github is the most recommended) pay attention to change the details in the yaml file according to your environment
+* Create a new pipeline: ![pipe](https://user-images.githubusercontent.com/105926044/178039928-9ba7f2f9-a67b-4979-8ee4-4d0c79003bc3.jpg)
+* Choose the source of your code: ![source](https://user-images.githubusercontent.com/105926044/178040675-c5434dca-a3d5-4d7d-91ec-432da9613495.jpg)
+
